@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RWP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+<div class="navbar">
+    <h3  class="logo" style="color: blue ;">Responsive website creation</h3>
+    <ul class="links">
+        <li><a href="#"><b>Home</b>|</a></li>
+        <li><a href="#"><b>About</b>|</a></li>
+        <li><a href="#"><b>Services</b>|</a></li>
+        <li><a href="#"><b>Contacts</b>|</a></li>
+    </ul>
+    <a href="#" class="action_btn">Get Started</a>
+    <div class="toggle_btn">
+        <i class="bx bx-menu" ></i>
+    </div>
+</div>
+    <div class="dropdown_menu ">
+        <ul>
+        <li><a href="home">Home</a></li>
+        <li><a href="about">About</a></li>
+        <li><a href="services">Services</a></li>
+        <li><a href="contact">Contacts</a></li>
+        <li><a href="#" class="action_btn">Get Started</a></li>
+    </ul>
+    </div>
+
+    
+    <script>
+    const toggleBtn = document.querySelector('.toggle_btn');
+    const toggleBtnIcon = document.querySelector('.toggle_btn i');
+    const dropDownMenu = document.querySelector('.dropdown_menu');
+
+    toggleBtn.onclick = function() {
+    dropDownMenu.classList.toggle('open');
+    const isOpen = dropDownMenu.classList.contains('open');
+    toggleBtnIcon.className = isOpen ? 'bx bx-x' : 'bx bx-menu';
+    };
+    </script>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Animi deserunt ratione, itaque est commodi cupiditate architecto autem aliquam illo ipsa esse, quos quia maxime laborum, numquam eius cumque necessitatibus doloremque?</p>
+
+</body>
+</html>
