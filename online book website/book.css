@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    outline: none;border: none;
+    text-transform:capitalize;
+    transition: all .2s linear;
+    transition: width none;
+}
+
+body {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url('bimg.jpg');
+}
+.header .header-1{
+    background-color:rgb(172, 172, 214);
+    padding: 1.5rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header .header-1 .logo{
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+.header .header-1 .search-form{
+    display: flex;
+    border-color: black;
+    overflow: hidden;
+    align-items: center;
+    font-size: 1.7rem;
+}
+.header .header-1 .icons div,
+.header .header-1 .icons{
+    font-size: 1.5rem;
+    margin-left: 1.5rem;
+    color:black ;
+}
+
+
+.header .header-1 .icons #home2:hover{
+    color:rgb(116, 113, 113);
+}
+
+.header .header-1 .icons #bag:hover{
+    color:rgb(116, 113, 113);
+}
+.header .header-1 .icons #heart:hover{
+    color:rgb(116, 113, 113);
+}
+.header .header-1 .icons #user:hover{
+    color:rgb(116, 113, 113);
+}
+.dropdown-content{
+   
+    position: absolute;
+    right: 0;
+    background-color:white;
+    min-width: 50px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,2);
+    z-index:1;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-right: 30px;
+}
+.dropdown-content a{
+    color: #000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+.dropdown-content a:hover,
+.dropdown-content span{
+background-color:rgb(232, 172, 61);
+}
+
+
+.button1{
+    display: inline-block;
+    background-color:rgb(172, 172, 214) ;
+    color: black;
+    font-weight: var(--font-semi-bold);
+    padding:1rem 1.5rem;
+    transition: box-shadow .4s;
+    border-radius: 2px;
+}
+button{
+    background-color:rgb(52, 51, 51);
+    color: azure;
+    padding: 10px;
+    margin:auto;
+    margin-top: 4px;
+    margin-left: 35%;
+    border-radius: 2px;
+}
+button:hover{
+    background-color:rgb(172, 172, 214) ;
+    color: black;
+}
+
+.homedata{
+    text-align: center;
+}
+.hometitle{
+    font-size: var(--biggest-font-size);
+    margin-bottom: 1rem;
+}
+.homedes{
+    margin-bottom: 1rem;
+}
+.homeimg{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,auto));
+}
+.homearticle img{
+    transition: 0.2s ease;
+}
+.scg{
+    row-gap: 3rem;
+}
+.services{
+    text-align: center;
+}
+.servicecard i{
+    display: block;
+    font-size: 2rem;
+    color: rgb(64, 64, 222);
+    margin-bottom: 1rem;
+}
+.featured__card{
+    
+    position: relative;
+    text-align: center;
+    background-color: whitesmoke;
+    padding: 2rem;
+    overflow: hidden;
+    border: 2px solid rgb(51, 50, 50);
+    transition: border .4s,background-color .4s;
+}
+.featured__img{
+    width: 150px;
+    margin: 0 auto .75rem;
+}
+.featured__title{
+    font-size: var(--h2-font-size);
+    margin-bottom: .5rem;
+}
+.featured__prices{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: .75rem;
+    margin-bottom: 1.25rem;
+}
+.featured__discount{
+    color:rgb(231, 91, 194) ;
+}
+.featured__price{
+font-size:var(--small-font-size) ;
+text-decoration: line-through;
+}
+.featured__card .button{
+    cursor: pointer;
+    margin-left: 1%;
+}
+.featured__actions{
+    display: inline-flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+    position: absolute;
+    top: 2rem;
+    right: -1.5rem;
+    transition: right .4s;
+}
+.featured__actions button{
+    background: none;
+    font-size: 1.25rem;
+    color: rgb(15, 16, 16);
+    cursor: pointer;
+}
+.featured__card:hover .featured__actions{
+    right: 1.5rem;
+}
+.featured__swiper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,auto));
+}
+
+
+.discount__container{
+    row-gap: 3.5rem;
+}
+.discount__data{
+    text-align: center;
+}
+
+.discount__title{
+    margin-bottom: 10px;
+}
+.discount__description{
+    margin-bottom: 2rem;
+}
+.discount__images{
+    display: flex;
+    justify-content: center;
+}
+.discount_img-1{
+    transform: translate(1rem) rotate(-10deg);
+}
+.discount_img-2{
+    transform: translate(-1rem) rotate(10deg);
+}
+.discount__images{
+    margin-bottom: 10px;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr; 
+    gap: 40px;
+    padding: 40px;
+    background-color: #f9f9f9; 
+    color: #333;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .footer__logo {
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+  }
+  
+  .footer__description {
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+  .footer__links {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer__link {
+    font-size: 14px;
+    text-decoration: none;
+    color: #333;
+    margin-bottom: 10px;
+    display: block;
+  }
+  
+  .footer__link:hover {
+    color: #007bff; 
+  }
+  
+  .footer__info {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+  
+  .footer_social-link {
+    font-size: 24px;
+    color: #333;
+    margin-right: 10px;
+  }
+  
+  .footer_social-link:hover {
+    color: #007bff;
+  }
+  
+  .footer__copy {
+    grid-column: span 4; 
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #777;
+  }
+  
+  
+  .last {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .footer {
+      grid-template-columns: 1fr;
+    }
+  
+    .footer__copy {
+      grid-column: span 1;
+    }
+  
+    .last {
+      grid-template-columns: 1fr; 
+    }
+  }
+  
